@@ -25,6 +25,7 @@
 
       onMounted(async () => {
         const json = (await (await import('./china.json')).default) as any;
+        console.log(json);
         registerMap('china', json);
         setOptions({
           visualMap: [

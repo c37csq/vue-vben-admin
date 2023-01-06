@@ -57,6 +57,14 @@ const charts: AppRouteModule = {
           },
         },
         {
+          path: 'china_map',
+          name: 'ChinaMap',
+          component: () => import('/@/views/demo/charts/ChinaMap.vue'),
+          meta: {
+            title: '中国地图',
+          },
+        },
+        {
           path: 'line',
           name: 'Line',
           component: () => import('/@/views/demo/charts/Line.vue'),
